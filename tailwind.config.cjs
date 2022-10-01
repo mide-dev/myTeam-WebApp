@@ -13,7 +13,7 @@ module.exports = {
         darkGreen: "#002529",
       },
       fontFamily: {
-        livvic: ["Livvic", "sans-serif"],
+        livvic: ["livvic", "sans-serif"],
       },
     },
     screens: {
