@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { logo, hamburger, open, close } from "../assets";
 import Button from "./Button";
+import Pattern from "./Pattern";
+import { patternMenuRight } from "../assets";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -41,21 +43,22 @@ const Navbar = () => {
       </div>
 
       {/* mobile nav */}
-      <div className="sm:hidden flex justify-end flex-1 ">
+      <div className="sm:hidden flex justify-end flex-1">
         <img
           src={toggle ? close : hamburger}
-          className="w-[20px] relative z-[100] h-[17px] 
+          className="w-[20px] relative z-[10] h-[17px] 
           object-contain self-center"
           onClick={() => setToggle((val) => !val)}
         />
 
         <div
           className={`${toggle ? "flex" : "hidden"}
-            h-screen w-[70%] absolute 
-            right-0 top-0 z-[2] bg-policeBlue
+            h-screen w-[70%] absolute
+            right-0 top-0 z-[5] bg-policeBlue
             py-[7rem] px-[3rem] flex-col
             items-center`}
         >
+          <Pattern img={patternMenuRight} styles="right-0 bottom-0" />
           <ul className="sm:hidden flex flex-col items-center">
             {navLinks.map((nav, index) => (
               <li
@@ -85,7 +88,7 @@ const Navbar = () => {
         className={`${
           toggle
             ? `block sm:hidden h-screen w-screen absolute
-          top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.7)]`
+              top-0 left-0 z-[2] right-0 bottom-0 bg-[rgba(0,0,0,0.7)]`
             : "hidden"
         } `}
       />
