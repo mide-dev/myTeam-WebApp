@@ -6,6 +6,7 @@ import { logo, hamburger, open, close } from "../assets";
 import Button from "./Button";
 import Pattern from "./Pattern";
 import { patternMenuRight } from "../assets";
+import styles from "../styles";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -29,8 +30,9 @@ const Navbar = () => {
         {navLinks.map((nav) => (
           <li
             key={nav.id}
-            className="text-white text-[1.125rem] 
-              leading-[1.75rem] cursor-pointer mr-[2.5rem]"
+            className={`text-white text-[1.125rem] 
+            leading-[1.75rem] cursor-pointer mr-[2.5rem]
+            ${styles.animation} hover:text-lightCoral`}
           >
             <Link to={nav.id}>{nav.title}</Link>
           </li>
@@ -38,7 +40,11 @@ const Navbar = () => {
       </ul>
       <div className="hidden sm:block">
         <Link to="/contact-us">
-          <Button text="Contact US" styles=" text-white border-2" />
+          <Button
+            text="Contact US"
+            styles={`${styles.animation} text-white border-2 
+            hover:bg-white hover:text-stateGreen`}
+          />
         </Link>
       </div>
 
@@ -66,6 +72,7 @@ const Navbar = () => {
                 className={`text-white  
                 font-semibold text-[1.125rem] 
                 leading-[1.75rem] cursor-pointer 
+                ${styles.animation} hover:text-lightCoral
                 ${
                   index !== navLinks.length - 1 ? "mb-[1.5rem]" : "mb-[2.25rem]"
                 }`}
@@ -77,7 +84,11 @@ const Navbar = () => {
 
           <div className="block">
             <Link to="/contact-us">
-              <Button text="Contact US" styles=" text-white border-2" />
+              <Button
+                text="Contact US"
+                styles={`${styles.animation} text-white border-2 
+                  hover:bg-white hover:text-stateGreen`}
+              />
             </Link>
           </div>
         </div>

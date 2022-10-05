@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
       {/* Features */}
-      <div className="bg-stateGreen relative -z-[2]">
+      <div className="bg-stateGreen relative">
         <Pattern img={patternFeaturesRight} styles="right-0 md:bottom-0" />
 
         <div className={`${styles.boxWidth}`}>
@@ -72,16 +72,16 @@ const Home = () => {
       </div>
 
       {/* CTA */}
-      <div className="bg-lightCoral relative -z-[2]">
+      <div className="bg-lightCoral relative z-[1]">
         <Pattern img={patternCTA} styles="-bottom-5 left-0 w-[200px]" />
-        <div className={`${styles.boxWidth}`}>
+        <div className={` ${styles.boxWidth}`}>
           <CTA />
         </div>
       </div>
 
       {/* Footer */}
-      <div className="bg-stateGreen">
-        <div>
+      <div className="bg-stateGreen relative z-[2]">
+        <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
       </div>

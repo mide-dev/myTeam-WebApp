@@ -13,7 +13,7 @@ const Features = () => {
           Build & manage distributed teams like no one else.
         </h2>
       </div>
-      <div className={`mx-auto xs:mx-0`}>
+      <div className={`mx-auto sm:mx-0`}>
         {features.map((feature, index) => (
           <div
             key={feature.id}
