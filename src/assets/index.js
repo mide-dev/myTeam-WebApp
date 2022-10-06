@@ -16,6 +16,21 @@ import patternFeaturesRight from "./patternFeaturesRight.svg";
 import patternTestimonialTop from "./patternTestimonialTop.svg";
 import patternTestimonialBottom from "./patternTestimonialBottom.svg";
 import patternCTA from "./patternCTA.svg";
+import facebook from "./facebook.svg";
+import linkedin from "./linkedin.svg";
+import pinterest from "./pinterest.svg";
+import twitter from "./twitter.svg";
+import Aden from "./Aden.jpg";
+import Cristian from "./Christian.jpg";
+import Cruz from "./Cruz.jpg";
+import Drake from "./Drake.jpg";
+import Griffin from "./Griffin.jpg";
+import Nikita from "./Nikita.jpg";
+import techRadar from "./techRadar.png";
+import theJakartaPost from "./theJakartaPost.png";
+import theVerge from "./theVerge.png";
+import theGuardian from "./theGuardian.png";
+import gadgetsNow from "./GadgetsNow.png";
 
 export {
   logo,
@@ -36,4 +51,19 @@ export {
   patternTestimonialTop,
   patternTestimonialBottom,
   patternCTA,
+  facebook,
+  linkedin,
+  pinterest,
+  twitter,
+  Aden,
+  Cristian,
+  Cruz,
+  Drake,
+  Griffin,
+  Nikita,
+  techRadar,
+  theJakartaPost,
+  theVerge,
+  theGuardian,
+  gadgetsNow,
 };
